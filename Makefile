@@ -38,7 +38,7 @@ build-dir:
 	@mkdir -p $(TMP_DIR)
 
 .PHONY: check
-check: test vet fmt staticcheck unused misspell
+check: test-race vet fmt staticcheck unused misspell
 
 .PHONY: clean
 clean:
